@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-completo {
+    padding: 4rem;
+    display: flex;
+    background-color: rgb(111, 87, 87);
+}
