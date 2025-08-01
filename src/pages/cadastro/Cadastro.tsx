@@ -105,7 +105,7 @@ function Cadastro() {
                             type="text"
                             id="foto"
                             name="foto"
-                            placeholder="Foto"
+                            placeholder="Insira o link da foto (https://...)"
                             className="border-2 border-slate-700 rounded p-2"
                             value={usuario.foto}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
