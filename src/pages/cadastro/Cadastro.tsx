@@ -94,7 +94,7 @@ function Cadastro() {
                             type="text"
                             id="usuario"
                             name="usuario"
-                            placeholder="Usuario"
+                            placeholder="Informe seu email"
                             className="border-2 border-slate-700 rounded p-2"
                             value={usuario.usuario}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
@@ -118,7 +118,7 @@ function Cadastro() {
                             type="password"
                             id="senha"
                             name="senha"
-                            placeholder="Senha"
+                            placeholder="Senha de 8 dígitos"
                             className="border-2 border-slate-700 rounded p-2"
                             value={usuario.senha}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
