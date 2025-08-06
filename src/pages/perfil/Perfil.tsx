@@ -1,5 +1,5 @@
 import { useContext, useEffect } from "react"
-import { useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 
 import { AuthContext } from "../../contexts/AuthContext"
 import { ToastAlerta } from "../../utils/ToastAlerta"
@@ -37,6 +37,7 @@ function Perfil() {
 				>
 					<p>Nome: {usuario.nome} </p>
 					<p>Email: {usuario.usuario}</p>
+					<Link to={`/perfilplus/${usuario.id}`} className='hover:underline'>Ir para o Perfil Plus</Link>
 				</div>
 			</div>
 		</div>

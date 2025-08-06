@@ -16,6 +16,7 @@ import Perfil from './pages/perfil/Perfil'
 import { ToastContainer } from 'react-toastify'
 
 import 'react-toastify/dist/ReactToastify.css';
+import PerfilPlus from './pages/perfilPlus/PerfilPlus'
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
               <Route path="/editarpostagem/:id" element={<FormPostagem />} />
               <Route path="/deletarpostagem/:id" element={<DeletarPostagem />} />
               <Route path="/perfil" element={<Perfil />} />
+              <Route path='/perfilplus/:id' element={<PerfilPlus />} />
             </Routes>
           </div>
           <Footer />

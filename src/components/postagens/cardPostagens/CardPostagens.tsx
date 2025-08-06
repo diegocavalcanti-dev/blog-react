@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import type Postagem from '../../../models/Postagem'
 
 interface CardPostagensProps {
@@ -30,7 +30,7 @@ function CardPostagem({ postagem }: CardPostagensProps) {
                     }).format(new Date(postagem.data))}</p>
                 </div>
             </div>
-            <div className="flex">
+            {/* <div className="flex">
                 <Link to={`/editarpostagem/${postagem.id}`}
                     className='w-full text-white bg-indigo-400 
                     hover:bg-indigo-800 flex items-center justify-center py-2'>
@@ -41,7 +41,7 @@ function CardPostagem({ postagem }: CardPostagensProps) {
                     hover:bg-red-700 w-full flex items-center justify-center'>
                     <button>Deletar</button>
                 </Link>
-            </div>
+            </div> */}
         </div>
     )
 }
